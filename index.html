@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LotoTECH TO THE WEB | Online Services</title>
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:gray;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    background:gray;
+    padding:15px;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav .logo{
+    color:burlywood;
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav a{
+    color:burlywood;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* SECTIONS */
+section{
+    min-height:100vh;
+    padding:100px 20px 40px;
+}
+
+/* HOME */
+#home{
+    color:burlywood;
+    text-align:center;
+    position:relative;
+}
+
+.slider{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+.slider img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    position:absolute;
+    animation:slide 15s infinite;
+}
+
+.slider img:nth-child(2){animation-delay:5s;}
+.slider img:nth-child(3){animation-delay:10s;}
+
+@keyframes slide{
+    0%{opacity:0;}
+    20%{opacity:1;}
+    40%{opacity:1;}
+    60%{opacity:0;}
+    100%{opacity:0;}
+}
+
+#home h1{
+    font-size:42px;
+    margin-top:120px;
+    text-shadow:2px 2px 5px #000;
+}
+
+#home p{
+    font-size:18px;
+    margin:15px 0;
+}
+
+.btn{
+    padding:12px 22px;
+    background:burlywood;
+    color:gray;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline-block;
+    margin-top:20px;
+}
+
+/* SERVICES */
+#services h2, #about h2{
+    text-align:center;
+    margin-bottom:30px;
+    color: burlywood;
+}
+
+.services-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.service-box{
+    background:gray;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    transition:transform .4s;
+}
+
+.service-box:hover{
+    transform:translateY(-10px);
+}
+
+.price{
+    color:burlywood;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* ABOUT */
+#about{
+    background:rgb(228, 214, 214);
+    text-align:center;
+    
+}
+#about p a{
+    color: green;
+}
+
+
+/* FOOTER */
+footer{
+    background:gray;
+    color:burlywood;
+    text-align:center;
+    padding:20px;
+}
+
+footer a{
+    color:burlywood;
+    margin:0 10px;
+    font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo"><i class="fa fa-bolt"></i> LotoTECH </div>
+    <div>
+        <a href="#home"><i class="fa fa-house"></i> Home</a>
+        <a href="#services"><i class="fa fa-gear"></i> Services</a>
+        <a href="#about"><i class="fa fa-user"></i> About</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <div class="slider">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+    </div>
+
+    <h1><i class="fa fa-laptop-code"></i> Web & System Development</h1>
+    <p><i class="fa fa-check"></i> Websites • Systems • Hosting • Domains</p>
+
+    <a class="btn" href="https://wa.me/265989788848?text=Hello%20I%20need%20help" target="_blank">
+        <i class="fa fa-comments"></i> Contact Admin </a>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2><i class="fa fa-gear"></i> Our Services</h2>
+    <div class="services-container" id="servicesList"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2><i class="fa fa-circle-info"></i> About Us</h2>
+    <p>
+        <i class="fa fa-star"></i> At LotoTECH, we believe every business deserves a strong digital presence. We provide complete technology solutions that help you grow, connect, and succeed online.
+
+What We Do,
+Website Development — modern, responsive, and user-friendly websites tailored to your brand.
+
+System Development — custom-built solutions that streamline operations and improve efficiency.
+
+Hosting Services — secure, reliable, and scalable hosting to keep your business online 24/7.
+
+Domain Registration — helping you secure the perfect name for your digital identity.
+
+Our Promise,
+We combine innovation, reliability, and affordability to deliver solutions that make a real impact. Whether you’re a startup, small business, or established enterprise, we’re here to turn your ideas into reality.
+
+Why Choose LotoTECH, 
+Experienced team with a passion for technology
+
+Affordable packages with transparent pricing
+
+Dedicated support and customer care
+
+End-to-end solutions under one roof
+
+👉 Partner with LotoTECH  — let’s take your business to the web and beyond.
+    </p>
+
+    <p>
+        <i class="fa fa-envelope"></i> Admin Email:
+        <a href="msakambewalotan@gmail.com">msakambewalotan@gmail.com</a>
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p><i class="fa fa-share"></i> Follow Us</p>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-x"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+/* ===== EDIT SERVICES ANYTIME HERE ===== */
+const services = [
+    {name:"Website Development", price:"$300", icon:"fa-globe"},
+    {name:"System Development", price:"$500", icon:"fa-database"},
+    {name:"E-Commerce Website", price:"$450", icon:"fa-cart-shopping"},
+    {name:"Website Hosting (Monthly)", price:"$20 / Month", icon:"fa-server"},
+    {name:"Website Hosting (Yearly)", price:"$150 / Year", icon:"fa-cloud"},
+    {name:"Domain Name (.com)", price:"$20 / Year", icon:"fa-link"},
+    {name:"Domain Name (.org / .net)", price:"$20 / Year", icon:"fa-globe"}
+];
+
+
+
+
+const servicesList = document.getElementById("servicesList");
+
+services.forEach(s=>{
+    servicesList.innerHTML+=`
+    <div class="service-box">
+        <h3><i class="fa ${s.icon}"></i> ${s.name}</h3>
+        <p class="price"><i class="fa fa-tag"></i> ${s.price}</p>
+    </div>`;
+});
+</script>
+
+</body>
+</html>
